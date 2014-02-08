@@ -1,3 +1,9 @@
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Database naming conventions for Gang of Five](#database-naming-conventions-for-gang-of-five)
+	- [Tables](#tables)
+	- [Attributes](#attributes)
+
 # Database naming conventions for *Gang of Five*
 
 ## Tables
