@@ -1,22 +1,33 @@
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+# Estándares de base de datos para *Gang of Five*
 
-- [Database naming conventions for Gang of Five](#database-naming-conventions-for-gang-of-five)
-	- [Tables](#tables)
-	- [Attributes](#attributes)
-
-# Database naming conventions for *Gang of Five*
-
-## Tables
- - All tables should have an id attribute, which is their primary key.
- - Table names should be plural, in lowercase, separating words with an underscore:
+## Tablas
+ - Todas las tablas deben tener un atributo `id`, el cual será su llave primaria.
+ - Los nombres de las tablas deben ir en minúscula, ser plurales, y separando las
+   palabras con un guión bajo:
    - `users`
    - `permissions`
    - `roles`
    - `private_messages`
-  - Tables used for relationships should named as follows: `table1_table2`.
+  - Las tablas utilizadas para relaciones se deben llamar de la siguiente manera: `table1_table2`.
 
-## Attributes
- - Same naming conventions as table names.
- - If an attribute is a foreign key, it should be named singular as follows: `table_id`.
-   For example, if the `private_messages` table has a foreign key for user,
-   the foreign key should be named `user_id`.
+## Atributos
+ - Misma convención de nombramiento que las tablas.
+ - Si el atributo es una llave foránea, se debe llamar de la siguiente manerae: `table_id` (singular).
+   Por ejemplo, si la tabla `private_messages` tiene una llave foránea para un usuario,
+   ésta se deberá llamar `user_id`.
+
+## Procedimientos Almacenados
+ - Utilizar `camelCase` y anteponer `sp_`:
+   - `sp_findUsers`
+   - `sp_cleanupExpiredEvents`
+
+## Triggers
+ - Utilizar `camelCase` y anteponer `tg_`.
+   Después colocar el nombre de la tabla afectada y la operación:
+   - `tg_usersDelete`
+   - `th_eventsInsert`
+
+## Vistas
+ - Utilizar `camelCase` y anteponer `v_`:
+   - `v_usersMostPopular`
+   - `v_eventsMostAttended`
