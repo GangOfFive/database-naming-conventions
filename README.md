@@ -1,4 +1,4 @@
-**Tabla de Contenidos**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+**Tabla de Contenidos**
 
 - [Estándares de base de datos para Gang of Five](#est%C3%A1ndares-de-base-de-datos-para-gang-of-five)
 	- [Tablas](#tablas)
