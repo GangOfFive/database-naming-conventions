@@ -17,11 +17,11 @@
    - `permissions`
    - `roles`
    - `private_messages`
-  - Las tablas utilizadas para relaciones se deben llamar de la siguiente manera: `table1_table2`.
+ - Las tablas utilizadas para relaciones se deben llamar de la siguiente manera: `table1_table2`.
 
 ## Atributos
  - Misma convención de nombramiento que las tablas.
- - Si el atributo es una llave foránea, se debe llamar de la siguiente manerae: `table_id` (singular).
+ - Si el atributo es una llave foránea, se debe llamar de la siguiente manera: `table_id` (singular).
    Por ejemplo, si la tabla `private_messages` tiene una llave foránea para un usuario,
    ésta se deberá llamar `user_id`.
 
@@ -34,7 +34,7 @@
  - Utilizar `camelCase` y anteponer `tg_`.
    Después colocar el nombre de la tabla afectada y la operación:
    - `tg_usersDelete`
-   - `th_eventsInsert`
+   - `tg_eventsInsert`
 
 ## Vistas
  - Utilizar `camelCase` y anteponer `v_`:
